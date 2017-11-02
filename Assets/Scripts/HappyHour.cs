@@ -126,6 +126,9 @@ public class HappyHour : MonoBehaviour {
                 // Sale not active
                 if (saleStartTime > System.DateTime.Now)
                     lblHappyHourNext.text = string.Format("Next Happy Hour \n{0}", saleStartTime.ToString());
+                else if (saleEndTime < System.DateTime.Now)
+                    lblHappyHourNext.text = string.Format("Happy Hour Expired at\n{0}", saleEndTime.ToString());
+
                 ShowSaleDisplays(false);
             }
         }
