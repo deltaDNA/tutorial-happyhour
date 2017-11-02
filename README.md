@@ -7,6 +7,7 @@ A request is made to the Engage In-Game Messagaing API, to check for any timed o
 
 ## 1) Create the game parameters to send to device
 Use the SETUP > Game Parameters tool to create two new game parameters that will be used to send the start hour and end hour to the app.
+We used `saleStartHour` and `saleEndHour` and set them both to Integers
 ![parameters](/Assets/Images/saleStartHour.png)
 
 ## 2) Create the Action (content) to be sent to the device
